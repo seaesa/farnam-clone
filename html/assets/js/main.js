@@ -83,6 +83,36 @@
     });
   }
 
+  // Login popup (opens as a modal over the current page instead of navigating away)
+  var authModal = document.getElementById("authModal");
+  if (authModal) {
+    var authModalClose = document.getElementById("authModalClose");
+    var authModalBackdrop = document.getElementById("authModalBackdrop");
+
+    var openAuthModal = function () {
+      authModal.classList.add("is-open");
+      document.body.classList.add("auth-modal-open");
+      var emailInput = document.getElementById("email");
+      if (emailInput) emailInput.focus();
+    };
+    var closeAuthModal = function () {
+      authModal.classList.remove("is-open");
+      document.body.classList.remove("auth-modal-open");
+    };
+
+    document.querySelectorAll(".nav-login").forEach(function (link) {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        openAuthModal();
+      });
+    });
+    if (authModalClose) authModalClose.addEventListener("click", closeAuthModal);
+    if (authModalBackdrop) authModalBackdrop.addEventListener("click", closeAuthModal);
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && authModal.classList.contains("is-open")) closeAuthModal();
+    });
+  }
+
   // Login / Sign up toggle (demo — no backend auth)
   var authForm = document.getElementById("authForm");
   if (authForm) {

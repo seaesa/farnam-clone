@@ -295,6 +295,52 @@
   </section>
 </footer>
 
+<div class="auth-modal" id="authModal">
+  <div class="auth-modal-backdrop" id="authModalBackdrop"></div>
+  <div class="auth-card auth-modal-card" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+    <button type="button" class="auth-modal-close" id="authModalClose" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <a href="index.html" class="logo-link">
+      <img src="assets/images/fsblog-logo@2x.png" alt="Farnam Street Logo" style="width:40px;">
+    </a>
+
+    <h1 id="authTitle">Log In to Farnam Street</h1>
+    <p class="auth-sub" id="authSub">Welcome back. Access your membership content below.</p>
+
+    <div class="auth-error" id="authError">Please fill in all fields to continue.</div>
+
+    <form id="authForm">
+      <div class="auth-field" id="nameField" style="display:none;">
+        <label for="fullName">Full name</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Jane Doe" autocomplete="name">
+      </div>
+      <div class="auth-field">
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+      </div>
+      <div class="auth-field">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" autocomplete="current-password" required>
+      </div>
+      <p class="auth-forgot" id="forgotRow"><a href="#">Forgot password?</a></p>
+
+      <div class="auth-submit">
+        <button type="submit" class="button" id="authSubmit" style="width:100%;">Log In</button>
+      </div>
+    </form>
+
+    <p class="auth-switch" id="authSwitch">
+      Don&rsquo;t have an account? <a href="#" id="switchToSignup">Sign up</a>
+    </p>
+
+    <div class="auth-divider">or</div>
+    <p class="auth-switch">
+      Not a member yet? <a href="membership.html">Explore FS Membership</a>
+    </p>
+  </div>
+</div>
+
 <script src="assets/js/main.js"></script>
 </body>
 </html>
