@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farnam Street Blog (Articles)</title>
+<meta name="description" content="Explore Farnam Street Articles. Our goal is to help you master the best of what other people have already figured out.">
+<link rel="icon" href="assets/images/fsblog-logo@2x.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="blog">
+
+<header class="site-header">
+  <div class="header-top">
+    <a href="index.html" class="logo-link">
+      <img src="assets/images/fsblog-logo@2x.png" alt="Farnam Street Logo">
+      <span class="logo-wordmark">Farnam Street</span>
+    </a>
+
+    <nav class="primary-nav" id="primaryNav">
+      <a href="#">Newsletter</a>
+      <a href="#">Sponsor</a>
+      <a href="#">Podcast</a>
+      <a href="index.html" class="is-active">Articles</a>
+      <button class="search-toggle desktop-search-toggle" aria-label="Search" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg>
+      </button>
+      <a href="login.html" class="nav-login">Log In</a>
+      <a href="membership.html" class="button">Become a Member</a>
+    </nav>
+
+    <button class="search-toggle mobile-search-toggle" aria-label="Search" aria-expanded="false">
+      <svg viewBox="0 0 512 512"><path d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"/></svg>
+    </button>
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+
+</header>
+
+<div class="nav-overlay" id="navOverlay"></div>
+<form class="search-panel" id="searchPanel" role="search">
+  <label class="screen-reader-text" for="siteSearch">Search Farnam Street</label>
+  <input id="siteSearch" type="search" placeholder="Search..." autocomplete="off">
+  <button type="submit">Search</button>
+</form>
+
+<main class="wrap">
+
+  <section class="hero">
+    <h1>Explore Farnam Street Articles</h1>
+    <p class="intro">Our goal is to help you master the best of what other people have already figured out.</p>
+
+    <div class="press-row">
+      <span>As featured in</span>
+      <img src="assets/images/nyt@2x.png" alt="New York Times logo">
+      <img src="assets/images/wsj@2x.png" alt="Wall Street Journal logo">
+      <img src="assets/images/economist@2x.png" alt="The Economist logo">
+      <img src="assets/images/ft@2x.png" alt="Financial Times logo">
+    </div>
+  </section>
+
+  <section class="topics">
+    <div class="topics-grid">
+      <div class="topic-tile">
+        <h2><a href="#">Accelerated Learning</a></h2>
+        <p>Learn faster and remember more.</p>
+        <a href="#" class="button-link">Explore</a>
+      </div>
+      <div class="topic-tile">
+        <h2><a href="#">Mental Models</a></h2>
+        <p>The best way to make intelligent decisions (~100 models explained).</p>
+        <a href="#" class="button-link">Explore</a>
+      </div>
+      <div class="topic-tile">
+        <h2><a href="#">Decision Making</a></h2>
+        <p>How to make smart decisions without getting lucky.</p>
+        <a href="#" class="button-link">Explore</a>
+      </div>
+      <div class="topic-tile">
+        <h2><a href="#">Reading Better</a></h2>
+        <p>Improve reading comprehension and recall, and effective note-taking.</p>
+        <a href="#" class="button-link">Explore</a>
+      </div>
+      <div class="topic-tile">
+        <h2><a href="#">Intellectual Giants</a></h2>
+        <p>Check out this list of intellectual giants who profoundly impacted the world with their ideas, thinking, and leadership.</p>
+        <a href="#" class="button-link">Explore</a>
+      </div>
+      <div class="topic-tile">
+        <h2><a href="#">Self Improvement</a></h2>
+        <p>Train your brain to retain knowledge and insight better by understanding how you learn.</p>
+        <a href="#" class="button-link">Explore</a>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="recent-articles">
+    <p class="section-heading">Recent articles on Farnam Street</p>
+
+    <div class="article-list" id="articleList">
+      <article class="article-item">
+        <h2><a href="#">The Best Summary of Atlas Shrugged</a></h2>
+        <p class="excerpt">A brief, no-fluff, summary of Atlas Shrugged by Ayn Rand. If you want to learn how capitalist countries become socialist, this book will help you. Let&rsquo;s dive in. Atlas Shrugged: The Simple &hellip;</p>
+        <a href="#" class="read-more">Continue reading</a>
+      </article>
+      <article class="article-item">
+        <h2><a href="#">Ride the Wave</a></h2>
+        <p class="excerpt">Imagine a surfer poised perfectly on the crest of a massive wave, making the impossible look effortless. The surfer can&rsquo;t control the water&mdash;only ride it. This image illustrates one of the most &hellip;</p>
+        <a href="#" class="read-more">Continue reading</a>
+      </article>
+      <article class="article-item">
+        <h2><a href="#">Experts vs. Imitators</a></h2>
+        <p class="excerpt">If you want the highest quality information, you have to speak to the best people. The problem is many people claim to be experts, who really aren&rsquo;t. Safeguard: Take time to distinguish real &hellip;</p>
+        <a href="#" class="read-more">Continue reading</a>
+      </article>
+      <article class="article-item">
+        <h2><a href="#">Simple Truths: Clear &amp; Gentle Guidance on the Big Issues in Life</a></h2>
+        <p class="excerpt">My Kindle Highlights from Kent Nerburn&rsquo;s Simple Truths: Clear &amp; Gentle Guidance on the Big Issues in Life *** &ldquo;Education is one of the great joys and solaces of life. It gives us a framework &hellip;</p>
+        <a href="#" class="read-more">Continue reading</a>
+      </article>
+      <article class="article-item">
+        <h2><a href="#">[FS Members] Lessons from Rockefeller: The Upside of Patience</a></h2>
+        <p class="excerpt">Long-term thinking is one of the most valuable traits of successful individuals. It demands that you forego the rewards of the immediate future and position yourself for lasting success. Members Only &hellip;</p>
+        <a href="#" class="read-more">Continue reading</a>
+      </article>
+      <article class="article-item">
+        <h2><a href="#">The Winner&rsquo;s Edge</a></h2>
+        <p class="excerpt">It is essential to take risks. Examine the life of any lucky man or woman, and you are all but certain to find that he or she was willing, at some point, to take a risk. Without that willingness, &hellip;</p>
+        <a href="#" class="read-more">Continue reading</a>
+      </article>
+      <article class="article-item">
+        <h2><a href="#">The Surprising Reason Writing Remains Essential in an AI-Driven World</a></h2>
+        <p class="excerpt">Why write an essay when you can type a few words and have AI generate one for you? Why write an email when AI can auto-respond for you with all the typical pleasantries and talking-points? While AI &hellip;</p>
+        <a href="#" class="read-more">Continue reading</a>
+      </article>
+      <article class="article-item">
+        <h2><a href="#">Lessons on Leadership: Michael Abrashoff&rsquo;s Turnaround Playbook</a></h2>
+        <p class="excerpt">Michael Abrashoff was in his mid-thirties when he took command of the USS Benfold, a guided missile destroyer and one of the worst-performing ships in the Navy. Despite her potency, the &hellip;</p>
+        <a href="#" class="read-more">Continue reading</a>
+      </article>
+      <article class="article-item">
+        <h2><a href="#">Let Go of the Learning Baggage</a></h2>
+        <p class="excerpt">We all want to learn better. That means retaining information, processing it, being able to use it when needed. More knowledge means better instincts; better insights into opportunities for both you &hellip;</p>
+        <a href="#" class="read-more">Continue reading</a>
+      </article>
+      <article class="article-item">
+        <h2><a href="#">Language: Why We Hear More Than Words</a></h2>
+        <p class="excerpt">It&rsquo;s a classic complaint in relationships, especially romantic ones: &ldquo;She said she was okay with me forgetting her birthday! Then why is she throwing dishes in the kitchen? Are the two things &hellip;</p>
+        <a href="#" class="read-more">Continue reading</a>
+      </article>
+      <article class="article-item">
+        <h2><a href="#">Learning Through Play</a></h2>
+        <p class="excerpt">Play is an essential way of learning about the world. Doing things we enjoy without a goal in mind leads us to find new information, better understand our own capabilities, and find unexpected beauty &hellip;</p>
+        <a href="#" class="read-more">Continue reading</a>
+      </article>
+      <article class="article-item">
+        <h2><a href="#">Chesterton&rsquo;s Fence: A Lesson in Thinking</a></h2>
+        <p class="excerpt">Chesterton&rsquo;s Fence is a principle that reminds us to look before we leap. To understand before we act. It&rsquo;s a cautionary reminder to understand why something is the way it is before &hellip;</p>
+        <a href="#" class="read-more">Continue reading</a>
+      </article>
+      <article class="article-item">
+        <h2><a href="#">The Ultimate Productivity Hack is Focus</a></h2>
+        <p class="excerpt">Focus is about saying no. Anyone can say no to bad ideas, but only a focused person will say no to good ideas. Focus is something that people consistently bring up as a key to success. When Warren &hellip;</p>
+        <a href="#" class="read-more">Continue reading</a>
+      </article>
+      <article class="article-item">
+        <h2><a href="#">Tit For Tat</a></h2>
+        <p class="excerpt">Tit for tat is a strategy which, according to game theory, is the most effective choice for iterated games based on mutual cooperation or defection. Both players benefit if they cooperate, but one &hellip;</p>
+        <a href="#" class="read-more">Continue reading</a>
+      </article>
+      <article class="article-item">
+        <h2><a href="#">Reciprocity: Getting What You Give</a></h2>
+        <p class="excerpt">This article is an excerpt from the bestselling book The Great Mental Models Volume 2: Physics, Chemistry and Biology. Reciprocity teaches us why &hellip;</p>
+        <a href="#" class="read-more">Continue reading</a>
+      </article>
+      <article class="article-item">
+        <h2><a href="#">A Wandering Mind: How Travel Can Change the Way You Think</a></h2>
+        <p class="excerpt">Most people travel as an observer, and as a result, &ldquo;see&rdquo; a lot. When you travel as an active participant, the experience can transform the way you think, and how you see the world. *** Here&rsquo;s a &hellip;</p>
+        <a href="#" class="read-more">Continue reading</a>
+      </article>
+    </div>
+
+    <div class="pagination">
+      <a href="#" class="pagination-link" id="loadMoreBtn">See older articles</a>
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="category-block">
+    <p class="section-heading">Explore articles by category</p>
+    <ul class="category-list">
+      <li><a href="#">Art</a> <span class="count">(13)</span></li>
+      <li><a href="#">Book Recommendations</a> <span class="count">(57)</span></li>
+      <li><a href="#">Books</a> <span class="count">(19)</span></li>
+      <li><a href="#">Business</a> <span class="count">(17)</span></li>
+      <li><a href="#">Creativity</a> <span class="count">(36)</span></li>
+      <li><a href="#">Culture</a> <span class="count">(57)</span></li>
+      <li><a href="#">Decision Making</a> <span class="count">(101)</span></li>
+      <li><a href="#">Farnam Street</a> <span class="count">(9)</span></li>
+      <li><a href="#">FS Bar</a> <span class="count">(3)</span></li>
+      <li><a href="#">Happiness</a> <span class="count">(23)</span></li>
+      <li><a href="#">Health</a> <span class="count">(24)</span></li>
+      <li><a href="#">History</a> <span class="count">(26)</span></li>
+      <li><a href="#">Human Nature</a></li>
+      <li><a href="#">Investing</a></li>
+      <li><a href="#">Leadership</a></li>
+      <li><a href="#">Learning</a></li>
+      <li><a href="#">Letters</a></li>
+      <li><a href="#">Lost Interviews</a></li>
+      <li><a href="#">Mental Models</a></li>
+      <li><a href="#">Numeracy</a></li>
+      <li><a href="#">People</a></li>
+      <li><a href="#">Performance</a></li>
+      <li><a href="#">Philosophy</a></li>
+      <li><a href="#">Probability</a></li>
+      <li><a href="#">Productivity</a></li>
+      <li><a href="#">Psychology</a></li>
+      <li><a href="#">Reading</a></li>
+      <li><a href="#">Science</a></li>
+      <li><a href="#">Self-Improvement</a></li>
+      <li><a href="#">Technology</a></li>
+      <li><a href="#">The Knowledge Project</a></li>
+      <li><a href="#">Thinking</a></li>
+      <li><a href="#">Thought and Opinion</a></li>
+      <li><a href="#">Uncategorized</a></li>
+      <li><a href="#">Writing</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <section class="footer-top">
+    <div class="wrap">
+      <p class="footer-eyebrow">Discover What You&rsquo;re Missing</p>
+      <div class="footer-grid">
+        <h2>Get the weekly email full of actionable ideas and insights you can use at work and home.</h2>
+        <div>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" name="email_address" placeholder="Your best email" required aria-label="Your best email">
+            <button type="submit">Subscribe</button>
+          </form>
+          <p class="newsletter-note" id="newsletterNote"></p>
+        </div>
+      </div>
+      <div class="footer-rule" aria-hidden="true"></div>
+      <div class="footer-press">
+        <span>As seen on:</span>
+        <div class="footer-press-logos">
+          <img src="assets/images/nyt@2x.png" alt="New York Times logo">
+          <img src="assets/images/wsj@2x.png" alt="Wall Street Journal logo">
+          <img src="assets/images/economist@2x.png" alt="The Economist logo">
+          <img src="assets/images/ft@2x.png" alt="Financial Times logo">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="footer-bottom">
+    <div class="wrap">
+      <div class="footer-links">
+        <div><h3>Articles</h3><a href="#">Mental Models</a><a href="#">Decision Making</a><a href="#">Learning</a><a href="#">Book Recommendations</a><a href="index.html">All Articles</a></div>
+        <div><h3>Podcast</h3><a href="#">Latest Episodes</a><a href="#">Organized by Theme</a><a href="#">ChatBot</a></div>
+        <div><h3>Books</h3><a href="#">Clear Thinking</a><a href="#">The Great Mental Models</a><a href="#">All Books</a></div>
+        <div><h3>Newsletter</h3><a href="#">Archive</a><a href="#">Sign Up</a></div>
+        <div><h3>About</h3><a href="#">About Shane</a><a href="#">Speaking</a><a href="#">Inquire about Sponsorship</a></div>
+      </div>
+      <div class="footer-separator" aria-hidden="true"></div>
+      <div class="footer-brand-row">
+        <div class="footer-brand">
+          <img src="assets/images/fsblog-logo@2x.png" alt="Farnam Street logo">
+          <div class="footer-meta">
+            <p>&copy; <span id="footerYear"></span> Farnam Street Media Inc. All Rights Reserved.</p>
+            <p>Proudly powered by <a href="#">WordPress</a>. Hosted by <a href="#">Pressable</a>. See our <a href="#">Privacy Policy</a>.</p>
+            <div class="footer-social" aria-label="Social links">
+              <a href="#" aria-label="Facebook"><svg viewBox="0 0 448 512"><path d="M448 80v352c0 26.5-21.5 48-48 48h-85.3V302.8h60.6l8.7-67.6h-69.3v-43.2c0-19.6 5.4-32.9 33.5-32.9H384V98.7c-9.6-1.3-28.5-2.7-54.1-2.7-53.5 0-90.1 32.7-90.1 92.8v51.8H179v67.6h60.9V480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48z"/></svg></a>
+              <a href="#" aria-label="YouTube"><svg viewBox="0 0 576 512"><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.1 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232 337.6V174.4L361 256l-129 81.6z"/></svg></a>
+              <a href="#" aria-label="Instagram"><svg viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+              <a href="#" aria-label="RSS Feed"><svg viewBox="0 0 448 512"><path d="M80 352c26.467 0 48 21.533 48 48s-21.533 48-48 48-48-21.533-48-48 21.533-48 48-48m0-32c-44.183 0-80 35.817-80 80s35.817 80 80 80 80-35.817 80-80-35.817-80-80-80zm367.996 147.615c-6.448-237.848-198.06-429.164-435.61-435.61C5.609 31.821 0 37.229 0 44.007v8.006c0 6.482 5.146 11.816 11.626 11.994 220.81 6.05 398.319 183.913 404.367 404.367.178 6.48 5.512 11.626 11.994 11.626h8.007c6.778 0 12.185-5.609 12.002-12.385zm-144.245-.05c-6.347-158.132-133.207-284.97-291.316-291.316C5.643 175.976 0 181.45 0 188.247v8.005c0 6.459 5.114 11.72 11.567 11.989 141.134 5.891 254.301 119.079 260.192 260.192.269 6.453 5.531 11.567 11.989 11.567h8.005c6.798 0 12.271-5.643 11.998-12.435z"/></svg></a>
+            </div>
+          </div>
+        </div>
+        <p class="footer-tagline">We&rsquo;re <a href="#">Syrus Partners</a>.<br>We buy amazing businesses.</p>
+      </div>
+      <div class="footer-separator" aria-hidden="true"></div>
+      <p class="footer-legal">Farnam Street participates in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising commissions by linking to Amazon.</p>
+    </div>
+  </section>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Log In &mdash; Farnam Street</title>
+<meta name="description" content="Log in or create a Farnam Street account.">
+<link rel="icon" href="assets/images/fsblog-logo@2x.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="page-auth">
+
+<header class="site-header">
+  <div class="header-top">
+    <a href="index.html" class="logo-link">
+      <img src="assets/images/fsblog-logo@2x.png" alt="Farnam Street Logo">
+      <span class="logo-wordmark">Farnam Street</span>
+    </a>
+    <nav class="primary-nav" id="primaryNav">
+      <a href="#">Newsletter</a>
+      <a href="#">Sponsor</a>
+      <a href="#">Podcast</a>
+      <a href="index.html">Articles</a>
+      <button class="search-toggle desktop-search-toggle" aria-label="Search" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg>
+      </button>
+      <a href="login.html" class="nav-login is-active">Log In</a>
+      <a href="membership.html" class="button">Become a Member</a>
+    </nav>
+    <button class="search-toggle mobile-search-toggle" aria-label="Search" aria-expanded="false">
+      <svg viewBox="0 0 512 512"><path d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"/></svg>
+    </button>
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="nav-overlay" id="navOverlay"></div>
+
+<main class="auth-wrap">
+  <div class="auth-card">
+    <a href="index.html" class="logo-link">
+      <img src="assets/images/fsblog-logo@2x.png" alt="Farnam Street Logo" style="width:40px;">
+    </a>
+
+    <h1 id="authTitle">Log In to Farnam Street</h1>
+    <p class="auth-sub" id="authSub">Welcome back. Access your membership content below.</p>
+
+    <div class="auth-error" id="authError">Please fill in all fields to continue.</div>
+
+    <form id="authForm">
+      <div class="auth-field" id="nameField" style="display:none;">
+        <label for="fullName">Full name</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Jane Doe" autocomplete="name">
+      </div>
+      <div class="auth-field">
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+      </div>
+      <div class="auth-field">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" autocomplete="current-password" required>
+      </div>
+      <p class="auth-forgot" id="forgotRow"><a href="#">Forgot password?</a></p>
+
+      <div class="auth-submit">
+        <button type="submit" class="button" id="authSubmit" style="width:100%;">Log In</button>
+      </div>
+    </form>
+
+    <p class="auth-switch" id="authSwitch">
+      Don&rsquo;t have an account? <a href="#" id="switchToSignup">Sign up</a>
+    </p>
+
+    <div class="auth-divider">or</div>
+    <p class="auth-switch">
+      Not a member yet? <a href="membership.html">Explore FS Membership</a>
+    </p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="footer-copyright" style="margin:0;">&copy; <span id="footerYear"></span> Farnam Street Media Inc. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
