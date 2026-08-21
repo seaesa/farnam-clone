@@ -1,0 +1,93 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1787230591651,
+  "projectRoot": "/home/hai/Workspaces/projects/farnam-clone",
+  "techStack": {
+    "languages": [],
+    "frameworks": [],
+    "packageManager": null,
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [],
+    "gitBranches": {
+      "defaultBranch": "main",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "html": {
+      "path": "html",
+      "purpose": null,
+      "fileCount": 3,
+      "lastAccessed": 1787230591629,
+      "keyFiles": [
+        "index.html",
+        "login.html",
+        "membership.html"
+      ]
+    },
+    "html/assets": {
+      "path": "html/assets",
+      "purpose": "Static assets",
+      "fileCount": 0,
+      "lastAccessed": 1787230591647,
+      "keyFiles": []
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "html/index.html",
+      "accessCount": 21,
+      "lastAccessed": 1787290296561,
+      "type": "file"
+    },
+    {
+      "path": "html/assets/css/style.css",
+      "accessCount": 16,
+      "lastAccessed": 1787290494384,
+      "type": "file"
+    },
+    {
+      "path": "html/assets/js/main.js",
+      "accessCount": 9,
+      "lastAccessed": 1787290268740,
+      "type": "file"
+    },
+    {
+      "path": "html/login.html",
+      "accessCount": 6,
+      "lastAccessed": 1787290074610,
+      "type": "file"
+    },
+    {
+      "path": "html/membership.html",
+      "accessCount": 4,
+      "lastAccessed": 1787290243918,
+      "type": "file"
+    },
+    {
+      "path": "html/about.html",
+      "accessCount": 1,
+      "lastAccessed": 1787290055819,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}

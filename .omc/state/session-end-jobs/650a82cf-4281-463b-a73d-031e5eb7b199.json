@@ -1,0 +1,328 @@
+{
+  "version": 1,
+  "jobId": "0e4067fb-6c9c-4b92-b812-6ead52ea21b0",
+  "sessionId": "650a82cf-4281-463b-a73d-031e5eb7b199",
+  "scopeKey": "9ef9789f95e817e40b84f1a0e01c2a32ee08efd564262ff3d5dddd7769d3122a",
+  "revision": 42,
+  "createdAt": "2026-08-20T15:52:47.459Z",
+  "updatedAt": "2026-08-20T15:52:48.811Z",
+  "producerGraceExpiresAt": "2026-08-20T15:53:17.460Z",
+  "bestEffortDeadlineAt": "2026-08-20T15:54:08.460Z",
+  "producers": {
+    "core": {
+      "state": "sealed",
+      "intentKey": "ffa617c8d7fb7a70412365f6646a858aca3f27506654b0525110c405c5b0bf03",
+      "payloadDigest": "ffa617c8d7fb7a70412365f6646a858aca3f27506654b0525110c405c5b0bf03",
+      "sealedAt": "2026-08-20T15:52:47.482Z",
+      "sealedBy": "foreground"
+    },
+    "wiki": {
+      "state": "no-op",
+      "sealedAt": "2026-08-20T15:52:47.459Z",
+      "sealedBy": "wiki-producer"
+    }
+  },
+  "actions": {
+    "foreground-cleanup": {
+      "class": "required",
+      "phase": "deferred-required",
+      "status": "completed",
+      "attempts": 0,
+      "idempotencyKey": "febf6dba2f2536433960a07f7cedce72e946b43ced0896570df80f017b8914d2",
+      "payload": {
+        "transcriptPath": "/home/hai/.claude/projects/-home-hai-Workspaces-projects-farnam-clone/650a82cf-4281-463b-a73d-031e5eb7b199.jsonl",
+        "cwd": "/home/hai/Workspaces/projects/farnam-clone",
+        "reason": "prompt_input_exit",
+        "input": {
+          "session_id": "650a82cf-4281-463b-a73d-031e5eb7b199",
+          "transcript_path": "/home/hai/.claude/projects/-home-hai-Workspaces-projects-farnam-clone/650a82cf-4281-463b-a73d-031e5eb7b199.jsonl",
+          "cwd": "/home/hai/Workspaces/projects/farnam-clone",
+          "prompt_id": "5fb06771-ecfc-4c36-bf41-e1750129018a",
+          "hook_event_name": "SessionEnd",
+          "reason": "prompt_input_exit"
+        },
+        "metrics": {
+          "session_id": "650a82cf-4281-463b-a73d-031e5eb7b199",
+          "ended_at": "2026-08-20T15:52:47.455Z",
+          "reason": "prompt_input_exit",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {},
+        "foregroundResult": {
+          "removedTransientFiles": 2,
+          "completedAt": "2026-08-20T15:52:47.481Z"
+        }
+      },
+      "budgetMs": 9000,
+      "completedAt": "2026-08-20T15:52:47.482Z",
+      "lastOutcomeCode": "completed"
+    },
+    "wiki-capture": {
+      "class": "required",
+      "phase": "deferred-required",
+      "status": "completed",
+      "attempts": 0,
+      "idempotencyKey": "1719cd1ef5b51e0269b78c4cb8c9308c9c1f7b82fd1c067fc034c060f23863f5",
+      "payload": {},
+      "budgetMs": 9000,
+      "completedAt": "2026-08-20T15:52:47.459Z"
+    },
+    "team-cleanup": {
+      "class": "required",
+      "phase": "deferred-required",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "cee6ac31df545408e1e822247ac249b3f8182a98a5fe8e448ae3b251e55bdee1",
+      "payload": {
+        "transcriptPath": "/home/hai/.claude/projects/-home-hai-Workspaces-projects-farnam-clone/650a82cf-4281-463b-a73d-031e5eb7b199.jsonl",
+        "cwd": "/home/hai/Workspaces/projects/farnam-clone",
+        "reason": "prompt_input_exit",
+        "input": {
+          "session_id": "650a82cf-4281-463b-a73d-031e5eb7b199",
+          "transcript_path": "/home/hai/.claude/projects/-home-hai-Workspaces-projects-farnam-clone/650a82cf-4281-463b-a73d-031e5eb7b199.jsonl",
+          "cwd": "/home/hai/Workspaces/projects/farnam-clone",
+          "prompt_id": "5fb06771-ecfc-4c36-bf41-e1750129018a",
+          "hook_event_name": "SessionEnd",
+          "reason": "prompt_input_exit"
+        },
+        "metrics": {
+          "session_id": "650a82cf-4281-463b-a73d-031e5eb7b199",
+          "ended_at": "2026-08-20T15:52:47.455Z",
+          "reason": "prompt_input_exit",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {}
+      },
+      "budgetMs": 9000,
+      "claimedAt": "2026-08-20T15:52:47.583Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "dd572e96-78b7-4aa7-86b5-a1bd99b513fc",
+        "phase": "terminal",
+        "deadlineAt": "2026-08-20T15:52:57.559Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-08-20T15:52:47.754Z"
+    },
+    "python-cleanup": {
+      "class": "required",
+      "phase": "deferred-required",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "1f1370c4ac056606059d517e2f106b602d8cbcb04587b3fcc5f3b9f89e649cd0",
+      "payload": {
+        "transcriptPath": "/home/hai/.claude/projects/-home-hai-Workspaces-projects-farnam-clone/650a82cf-4281-463b-a73d-031e5eb7b199.jsonl",
+        "cwd": "/home/hai/Workspaces/projects/farnam-clone",
+        "reason": "prompt_input_exit",
+        "input": {
+          "session_id": "650a82cf-4281-463b-a73d-031e5eb7b199",
+          "transcript_path": "/home/hai/.claude/projects/-home-hai-Workspaces-projects-farnam-clone/650a82cf-4281-463b-a73d-031e5eb7b199.jsonl",
+          "cwd": "/home/hai/Workspaces/projects/farnam-clone",
+          "prompt_id": "5fb06771-ecfc-4c36-bf41-e1750129018a",
+          "hook_event_name": "SessionEnd",
+          "reason": "prompt_input_exit"
+        },
+        "metrics": {
+          "session_id": "650a82cf-4281-463b-a73d-031e5eb7b199",
+          "ended_at": "2026-08-20T15:52:47.455Z",
+          "reason": "prompt_input_exit",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {}
+      },
+      "budgetMs": 9000,
+      "claimedAt": "2026-08-20T15:52:47.762Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "cbb0a9c5-2886-49c9-8b4f-fe70c73c1fec",
+        "phase": "terminal",
+        "deadlineAt": "2026-08-20T15:52:57.559Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-08-20T15:52:48.071Z"
+    },
+    "reply-cleanup": {
+      "class": "required",
+      "phase": "deferred-required",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "0b3a8b47c28b26d56aca004d4f572b96c118f16819c0d35162418816f9a5420a",
+      "payload": {
+        "transcriptPath": "/home/hai/.claude/projects/-home-hai-Workspaces-projects-farnam-clone/650a82cf-4281-463b-a73d-031e5eb7b199.jsonl",
+        "cwd": "/home/hai/Workspaces/projects/farnam-clone",
+        "reason": "prompt_input_exit",
+        "input": {
+          "session_id": "650a82cf-4281-463b-a73d-031e5eb7b199",
+          "transcript_path": "/home/hai/.claude/projects/-home-hai-Workspaces-projects-farnam-clone/650a82cf-4281-463b-a73d-031e5eb7b199.jsonl",
+          "cwd": "/home/hai/Workspaces/projects/farnam-clone",
+          "prompt_id": "5fb06771-ecfc-4c36-bf41-e1750129018a",
+          "hook_event_name": "SessionEnd",
+          "reason": "prompt_input_exit"
+        },
+        "metrics": {
+          "session_id": "650a82cf-4281-463b-a73d-031e5eb7b199",
+          "ended_at": "2026-08-20T15:52:47.455Z",
+          "reason": "prompt_input_exit",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {}
+      },
+      "budgetMs": 9000,
+      "claimedAt": "2026-08-20T15:52:48.078Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "dea3acb5-d378-4f8c-9547-779eddc20faf",
+        "phase": "terminal",
+        "deadlineAt": "2026-08-20T15:52:57.559Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-08-20T15:52:48.260Z"
+    },
+    "callback": {
+      "class": "best-effort",
+      "phase": "deferred-best-effort",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "d068ede2655bf89e0c0950e087d0603d7dcf45538e94f20a654d08c6f4841895",
+      "payload": {
+        "transcriptPath": "/home/hai/.claude/projects/-home-hai-Workspaces-projects-farnam-clone/650a82cf-4281-463b-a73d-031e5eb7b199.jsonl",
+        "cwd": "/home/hai/Workspaces/projects/farnam-clone",
+        "reason": "prompt_input_exit",
+        "input": {
+          "session_id": "650a82cf-4281-463b-a73d-031e5eb7b199",
+          "transcript_path": "/home/hai/.claude/projects/-home-hai-Workspaces-projects-farnam-clone/650a82cf-4281-463b-a73d-031e5eb7b199.jsonl",
+          "cwd": "/home/hai/Workspaces/projects/farnam-clone",
+          "prompt_id": "5fb06771-ecfc-4c36-bf41-e1750129018a",
+          "hook_event_name": "SessionEnd",
+          "reason": "prompt_input_exit"
+        },
+        "metrics": {
+          "session_id": "650a82cf-4281-463b-a73d-031e5eb7b199",
+          "ended_at": "2026-08-20T15:52:47.455Z",
+          "reason": "prompt_input_exit",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {}
+      },
+      "budgetMs": 2000,
+      "claimedAt": "2026-08-20T15:52:48.267Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "9c15c0ec-5d11-4256-aff2-5b6859376d72",
+        "phase": "terminal",
+        "deadlineAt": "2026-08-20T15:52:57.559Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-08-20T15:52:48.431Z"
+    },
+    "notification": {
+      "class": "best-effort",
+      "phase": "deferred-best-effort",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "89c0438ff63097ce04beb60efb87292ff68a7af350a0ee331f3de9dbf42d62fc",
+      "payload": {
+        "transcriptPath": "/home/hai/.claude/projects/-home-hai-Workspaces-projects-farnam-clone/650a82cf-4281-463b-a73d-031e5eb7b199.jsonl",
+        "cwd": "/home/hai/Workspaces/projects/farnam-clone",
+        "reason": "prompt_input_exit",
+        "input": {
+          "session_id": "650a82cf-4281-463b-a73d-031e5eb7b199",
+          "transcript_path": "/home/hai/.claude/projects/-home-hai-Workspaces-projects-farnam-clone/650a82cf-4281-463b-a73d-031e5eb7b199.jsonl",
+          "cwd": "/home/hai/Workspaces/projects/farnam-clone",
+          "prompt_id": "5fb06771-ecfc-4c36-bf41-e1750129018a",
+          "hook_event_name": "SessionEnd",
+          "reason": "prompt_input_exit"
+        },
+        "metrics": {
+          "session_id": "650a82cf-4281-463b-a73d-031e5eb7b199",
+          "ended_at": "2026-08-20T15:52:47.455Z",
+          "reason": "prompt_input_exit",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {}
+      },
+      "budgetMs": 2000,
+      "claimedAt": "2026-08-20T15:52:48.449Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "7e191510-077f-42a5-8565-ee7e478f416d",
+        "phase": "terminal",
+        "deadlineAt": "2026-08-20T15:52:57.559Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-08-20T15:52:48.619Z"
+    },
+    "openclaw": {
+      "class": "best-effort",
+      "phase": "deferred-best-effort",
+      "status": "completed",
+      "attempts": 1,
+      "idempotencyKey": "31fe8f6e1cf204e27006de511df257326fdd98655122ca437013e8779ffc735b",
+      "payload": {
+        "transcriptPath": "/home/hai/.claude/projects/-home-hai-Workspaces-projects-farnam-clone/650a82cf-4281-463b-a73d-031e5eb7b199.jsonl",
+        "cwd": "/home/hai/Workspaces/projects/farnam-clone",
+        "reason": "prompt_input_exit",
+        "input": {
+          "session_id": "650a82cf-4281-463b-a73d-031e5eb7b199",
+          "transcript_path": "/home/hai/.claude/projects/-home-hai-Workspaces-projects-farnam-clone/650a82cf-4281-463b-a73d-031e5eb7b199.jsonl",
+          "cwd": "/home/hai/Workspaces/projects/farnam-clone",
+          "prompt_id": "5fb06771-ecfc-4c36-bf41-e1750129018a",
+          "hook_event_name": "SessionEnd",
+          "reason": "prompt_input_exit"
+        },
+        "metrics": {
+          "session_id": "650a82cf-4281-463b-a73d-031e5eb7b199",
+          "ended_at": "2026-08-20T15:52:47.455Z",
+          "reason": "prompt_input_exit",
+          "agents_spawned": 0,
+          "agents_completed": 0,
+          "modes_used": []
+        },
+        "initialTeamNames": [],
+        "openClawEnabled": false,
+        "openClawRouting": {}
+      },
+      "budgetMs": 2000,
+      "claimedAt": "2026-08-20T15:52:48.626Z",
+      "runner": {
+        "attempt": 1,
+        "runnerNonce": "d96d3fd8-5f98-433a-ab92-b67946856ff5",
+        "phase": "terminal",
+        "deadlineAt": "2026-08-20T15:52:57.559Z"
+      },
+      "lastOutcomeCode": "completed",
+      "completedAt": "2026-08-20T15:52:48.786Z"
+    }
+  },
+  "owner": null,
+  "phase": "complete",
+  "completion": {
+    "completedAt": "2026-08-20T15:52:48.798Z",
+    "terminalDigest": "ffb4db84b6fcd8d6abb4f9c7b410629ed76ec0c32c3b92e7244ec131b639d284",
+    "terminalRevision": 41
+  }
+}
