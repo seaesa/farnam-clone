@@ -26,6 +26,35 @@
     navOverlay.addEventListener("click", closeNav);
   }
 
+  // "Bài viết" nav dropdown
+  document.querySelectorAll(".nav-item").forEach(function (navItem) {
+    var caret = navItem.querySelector(".nav-caret");
+    if (!caret) return;
+    caret.addEventListener("click", function (e) {
+      e.preventDefault();
+      var open = navItem.classList.toggle("is-open");
+      caret.setAttribute("aria-expanded", String(open));
+    });
+  });
+  document.addEventListener("click", function (e) {
+    document.querySelectorAll(".nav-item.is-open").forEach(function (navItem) {
+      if (!navItem.contains(e.target)) {
+        navItem.classList.remove("is-open");
+        var caret = navItem.querySelector(".nav-caret");
+        if (caret) caret.setAttribute("aria-expanded", "false");
+      }
+    });
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      document.querySelectorAll(".nav-item.is-open").forEach(function (navItem) {
+        navItem.classList.remove("is-open");
+        var caret = navItem.querySelector(".nav-caret");
+        if (caret) caret.setAttribute("aria-expanded", "false");
+      });
+    }
+  });
+
   // Lightweight search panel for the static clone.
   var searchToggles = document.querySelectorAll(".search-toggle");
   var searchPanel = document.getElementById("searchPanel");
