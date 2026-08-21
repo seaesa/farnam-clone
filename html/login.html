@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="vi">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Log In &mdash; Farnam Street</title>
-<meta name="description" content="Log in or create a Farnam Street account.">
+<title>Đăng nhập &mdash; Blog cá nhân</title>
+<meta name="description" content="Đăng nhập hoặc tạo tài khoản blog cá nhân.">
 <link rel="icon" href="assets/images/fsblog-logo@2x.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,21 +16,21 @@
 <header class="site-header">
   <div class="header-top">
     <a href="index.html" class="logo-link">
-      <img src="assets/images/fsblog-logo@2x.png" alt="Farnam Street Logo">
-      <span class="logo-wordmark">Farnam Street</span>
+      <img src="assets/images/fsblog-logo@2x.png" alt="Logo blog">
+      <span class="logo-wordmark">Blog cá nhân</span>
     </a>
     <nav class="primary-nav" id="primaryNav">
-      <a href="#">Newsletter</a>
-      <a href="#">Sponsor</a>
+      <a href="index.html">Bài viết</a>
       <a href="#">Podcast</a>
-      <a href="index.html">Articles</a>
-      <button class="search-toggle desktop-search-toggle" aria-label="Search" aria-expanded="false">
+      <a href="about.html">Về tôi</a>
+      <a href="#">Newsletter</a>
+      <button class="search-toggle desktop-search-toggle" aria-label="Tìm kiếm" aria-expanded="false">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg>
       </button>
-      <a href="login.html" class="nav-login is-active">Log In</a>
-      <a href="membership.html" class="button">Become a Member</a>
+      <a href="login.html" class="nav-login is-active">Đăng nhập</a>
+      <a href="membership.html" class="button">Trở thành thành viên</a>
     </nav>
-    <button class="search-toggle mobile-search-toggle" aria-label="Search" aria-expanded="false">
+    <button class="search-toggle mobile-search-toggle" aria-label="Tìm kiếm" aria-expanded="false">
       <svg viewBox="0 0 512 512"><path d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"/></svg>
     </button>
     <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menu">
@@ -46,52 +46,52 @@
 <div class="auth-modal is-open" id="authModal">
   <div class="auth-modal-backdrop" id="authModalBackdrop"></div>
   <div class="auth-card auth-modal-card" role="dialog" aria-modal="true" aria-labelledby="authTitle">
-    <button type="button" class="auth-modal-close" id="authModalClose" aria-label="Close">
+    <button type="button" class="auth-modal-close" id="authModalClose" aria-label="Đóng">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
     </button>
     <a href="index.html" class="logo-link">
-      <img src="assets/images/fsblog-logo@2x.png" alt="Farnam Street Logo" style="width:40px;">
+      <img src="assets/images/fsblog-logo@2x.png" alt="Logo blog" style="width:40px;">
     </a>
 
-    <h1 id="authTitle">Log In to Farnam Street</h1>
-    <p class="auth-sub" id="authSub">Welcome back. Access your membership content below.</p>
+    <h1 id="authTitle">Đăng nhập</h1>
+    <p class="auth-sub" id="authSub">Chào mừng bạn quay lại. Truy cập nội dung thành viên bên dưới.</p>
 
-    <div class="auth-error" id="authError">Please fill in all fields to continue.</div>
+    <div class="auth-error" id="authError">Vui lòng điền đầy đủ thông tin để tiếp tục.</div>
 
     <form id="authForm">
       <div class="auth-field" id="nameField" style="display:none;">
-        <label for="fullName">Full name</label>
-        <input type="text" id="fullName" name="fullName" placeholder="Jane Doe" autocomplete="name">
+        <label for="fullName">Họ và tên</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Nguyễn Văn A" autocomplete="name">
       </div>
       <div class="auth-field">
-        <label for="email">Email address</label>
-        <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+        <label for="email">Địa chỉ email</label>
+        <input type="email" id="email" name="email" placeholder="ban@vidu.com" autocomplete="email" required>
       </div>
       <div class="auth-field">
-        <label for="password">Password</label>
+        <label for="password">Mật khẩu</label>
         <input type="password" id="password" name="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" autocomplete="current-password" required>
       </div>
-      <p class="auth-forgot" id="forgotRow"><a href="#">Forgot password?</a></p>
+      <p class="auth-forgot" id="forgotRow"><a href="#">Quên mật khẩu?</a></p>
 
       <div class="auth-submit">
-        <button type="submit" class="button" id="authSubmit" style="width:100%;">Log In</button>
+        <button type="submit" class="button" id="authSubmit" style="width:100%;">Đăng nhập</button>
       </div>
     </form>
 
     <p class="auth-switch" id="authSwitch">
-      Don&rsquo;t have an account? <a href="#" id="switchToSignup">Sign up</a>
+      Chưa có tài khoản? <a href="#" id="switchToSignup">Đăng ký</a>
     </p>
 
-    <div class="auth-divider">or</div>
+    <div class="auth-divider">hoặc</div>
     <p class="auth-switch">
-      Not a member yet? <a href="membership.html">Explore FS Membership</a>
+      Chưa là thành viên? <a href="membership.html">Khám phá gói thành viên</a>
     </p>
   </div>
 </div>
 
 <footer class="site-footer">
   <div class="wrap">
-    <p class="footer-copyright" style="margin:0;">&copy; <span id="footerYear"></span> Farnam Street Media Inc. All rights reserved.</p>
+    <p class="footer-copyright" style="margin:0;">&copy; <span id="footerYear"></span> Blog cá nhân. Bảo lưu mọi quyền.</p>
   </div>
 </footer>
 

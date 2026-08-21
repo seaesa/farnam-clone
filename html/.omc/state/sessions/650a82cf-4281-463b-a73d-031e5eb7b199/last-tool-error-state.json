@@ -1,7 +1,7 @@
 {
-  "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"pkill -f \\\"http.server 8123\\\" 2>/dev/null; echo done\",\"description\":\"Stop local test HTTP server\"}",
-  "error": "Exit code 144",
-  "timestamp": "2026-08-20T13:24:40.956Z",
+  "tool_name": "mcp__claude-in-chrome__computer",
+  "tool_input_preview": "{\"action\":\"screenshot\",\"tabId\":548562081}",
+  "error": "Error capturing screenshot: CDP sendCommand \"Page.captureScreenshot\" timed out after 30000ms on tab 548562081. The renderer may be frozen or unresponsive.",
+  "timestamp": "2026-08-21T05:32:43.266Z",
   "retry_count": 1
 }

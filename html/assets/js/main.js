@@ -43,7 +43,7 @@
     searchPanel.addEventListener("submit", function (e) {
       e.preventDefault();
       if (searchInput && searchInput.value.trim()) {
-        window.alert("Search is a demo interaction in this static clone: " + searchInput.value.trim());
+        window.alert("Tìm kiếm là tương tác demo trên bản clone tĩnh này: " + searchInput.value.trim());
       }
     });
   }
@@ -56,7 +56,7 @@
       var note = document.getElementById("newsletterNote");
       var email = newsletterForm.querySelector('input[name="email_address"]').value;
       if (note) {
-        note.textContent = "Thanks! We've added " + email + " to the list. (Demo only — no email is actually sent.)";
+        note.textContent = "Cảm ơn! Đã thêm " + email + " vào danh sách. (Chỉ là demo — không có email nào thực sự được gửi.)";
       }
       newsletterForm.reset();
     });
@@ -68,7 +68,7 @@
     pwywForm.addEventListener("submit", function (e) {
       e.preventDefault();
       var input = pwywForm.querySelector('input[name="price"]');
-      window.alert("Thanks for your support! ($" + input.value + "/year selected). This is a demo checkout — no payment is processed.");
+      window.alert("Cảm ơn bạn đã ủng hộ! (Đã chọn " + input.value + "₫/năm). Đây là demo — chưa có khoản thanh toán nào được xử lý.");
     });
   }
 
@@ -77,7 +77,7 @@
   if (loadMoreBtn) {
     loadMoreBtn.addEventListener("click", function (e) {
       e.preventDefault();
-      loadMoreBtn.textContent = "You've reached the end (demo)";
+      loadMoreBtn.textContent = "Bạn đã xem hết bài viết (demo)";
       loadMoreBtn.style.pointerEvents = "none";
       loadMoreBtn.style.opacity = "0.6";
     });
@@ -128,21 +128,21 @@
 
     function renderMode() {
       if (isSignup) {
-        authTitle.textContent = "Create your Farnam Street account";
-        authSub.textContent = "Join to save articles and manage your membership.";
-        authSubmit.textContent = "Sign Up";
+        authTitle.textContent = "Tạo tài khoản của bạn";
+        authSub.textContent = "Đăng ký để lưu bài viết và quản lý gói thành viên.";
+        authSubmit.textContent = "Đăng ký";
         nameField.style.display = "block";
         document.getElementById("fullName").required = true;
         forgotRow.style.display = "none";
-        authSwitch.innerHTML = 'Already have an account? <a href="#" id="switchToSignup">Log in</a>';
+        authSwitch.innerHTML = 'Đã có tài khoản? <a href="#" id="switchToSignup">Đăng nhập</a>';
       } else {
-        authTitle.textContent = "Log In to Farnam Street";
-        authSub.textContent = "Welcome back. Access your membership content below.";
-        authSubmit.textContent = "Log In";
+        authTitle.textContent = "Đăng nhập";
+        authSub.textContent = "Chào mừng bạn quay lại. Truy cập nội dung thành viên bên dưới.";
+        authSubmit.textContent = "Đăng nhập";
         nameField.style.display = "none";
         document.getElementById("fullName").required = false;
         forgotRow.style.display = "block";
-        authSwitch.innerHTML = 'Don&rsquo;t have an account? <a href="#" id="switchToSignup">Sign up</a>';
+        authSwitch.innerHTML = 'Chưa có tài khoản? <a href="#" id="switchToSignup">Đăng ký</a>';
       }
       authError.classList.remove("is-visible");
       document.getElementById("switchToSignup").addEventListener("click", handleSwitchClick);
@@ -165,12 +165,12 @@
       var name = document.getElementById("fullName").value.trim();
 
       if (!email || !password || (isSignup && !name)) {
-        authError.textContent = "Please fill in all fields to continue.";
+        authError.textContent = "Vui lòng điền đầy đủ thông tin để tiếp tục.";
         authError.classList.add("is-visible");
         return;
       }
       authError.classList.remove("is-visible");
-      window.alert((isSignup ? "Account created" : "Logged in") + " for " + email + ". This is a demo form — no real authentication occurs.");
+      window.alert((isSignup ? "Đã tạo tài khoản" : "Đã đăng nhập") + " cho " + email + ". Đây là form demo — không có xác thực thực sự nào diễn ra.");
       authForm.reset();
     });
   }
