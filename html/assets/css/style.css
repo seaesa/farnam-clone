@@ -143,6 +143,8 @@ a.contact-value:hover { color: var(--red); }
 /* Recent articles */
 hr { width: calc(100vw - 10px); border: 0; border-top: 1px solid var(--rule); margin: 128px calc((var(--content) - 100vw + 10px) / 2) 0; }
 .recent-articles + hr { margin-top: 54px; }
+.hero-post-body { margin-bottom: 0; }
+.hero-post-body + hr { margin-top: 54px; }
 .recent-articles { padding-top: 122px; }
 .section-heading { margin: 0 0 122px; font: 700 20px/30px var(--sans); letter-spacing: -0.6px; }
 .article-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 81px; row-gap: 32px; align-items: start; }
