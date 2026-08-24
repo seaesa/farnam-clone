@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"cd /home/hai/Workspaces/projects/farnam-clone/html && (pkill -f \\\"http.server 8123\\\" 2>/dev/null; sleep 0.3; python3 -m http.server 8123 >/tmp/httpserver.log 2>&1 &) ; sleep 1; curl -s -o ...",
+  "error": "Exit code 144",
+  "timestamp": "2026-08-24T08:39:00.681Z",
+  "retry_count": 1
+}

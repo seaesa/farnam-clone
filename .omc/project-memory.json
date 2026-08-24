@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1787230591651,
+  "lastScanned": 1787559783898,
   "projectRoot": "/home/hai/Workspaces/projects/farnam-clone",
   "techStack": {
     "languages": [],
@@ -35,33 +35,35 @@
     "html": {
       "path": "html",
       "purpose": null,
-      "fileCount": 3,
-      "lastAccessed": 1787230591629,
+      "fileCount": 6,
+      "lastAccessed": 1787559783866,
       "keyFiles": [
+        "about.html",
         "index.html",
         "login.html",
-        "membership.html"
+        "membership.html",
+        "out.txt"
       ]
     },
     "html/assets": {
       "path": "html/assets",
       "purpose": "Static assets",
       "fileCount": 0,
-      "lastAccessed": 1787230591647,
+      "lastAccessed": 1787559783878,
       "keyFiles": []
     }
   },
   "hotPaths": [
     {
-      "path": "html/index.html",
-      "accessCount": 28,
-      "lastAccessed": 1787292152491,
+      "path": "html/assets/css/style.css",
+      "accessCount": 35,
+      "lastAccessed": 1787564187374,
       "type": "file"
     },
     {
-      "path": "html/assets/css/style.css",
-      "accessCount": 25,
-      "lastAccessed": 1787291960960,
+      "path": "html/index.html",
+      "accessCount": 31,
+      "lastAccessed": 1787560735071,
       "type": "file"
     },
     {
@@ -72,8 +74,14 @@
     },
     {
       "path": "html/login.html",
-      "accessCount": 6,
-      "lastAccessed": 1787290074610,
+      "accessCount": 7,
+      "lastAccessed": 1787563371542,
+      "type": "file"
+    },
+    {
+      "path": "html/about.html",
+      "accessCount": 5,
+      "lastAccessed": 1787564139409,
       "type": "file"
     },
     {
@@ -83,9 +91,21 @@
       "type": "file"
     },
     {
-      "path": "html/about.html",
+      "path": "html/ve-blog-va-nguoi-viet.html",
+      "accessCount": 2,
+      "lastAccessed": 1787563397589,
+      "type": "file"
+    },
+    {
+      "path": "html/ren-nao-hoc-toan-nang-tam-tu-duy.html",
       "accessCount": 1,
-      "lastAccessed": 1787290055819,
+      "lastAccessed": 1787560542607,
+      "type": "file"
+    },
+    {
+      "path": "html/assets/images/nguyen-the-van.jpg",
+      "accessCount": 1,
+      "lastAccessed": 1787563203669,
       "type": "file"
     }
   ],

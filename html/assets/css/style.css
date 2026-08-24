@@ -98,16 +98,28 @@ p, h1, h2, h3, h4 { margin: 0; }
 .post-body { max-width: 720px; margin: 48px auto 96px; }
 .post-body p { margin: 0 0 28px; font: 20px/35px var(--serif); }
 .post-body h2 { margin: 48px 0 20px; font: 700 28px/34px var(--sans); letter-spacing: -0.6px; }
+.post-figure { margin: 32px 0 36px; }
+.post-figure img { width: 220px; height: auto; margin: 0 auto; border-radius: 6px; box-shadow: 0 20px 50px rgba(0, 0, 0, .12); }
+.post-figure figcaption { margin-top: 14px; text-align: center; color: #767676; font: 400 15px/22px var(--sans); }
 @media (max-width: 767px) {
   .post-hero { padding-top: 29.6px; }
   .post-hero h1 { font-size: 28px; line-height: 32px; letter-spacing: -0.84px; }
   .post-body { margin-top: 32px; }
+  .post-figure img { width: 160px; height: auto; }
 }
 
 /* About page — compact pillar list (no large color blocks) */
 .about-hero { padding: 64px 0 0; }
 .about-hero h1 { max-width: 720px; font: 700 44px/50px var(--sans); letter-spacing: -1.2px; }
-.about-hero .intro { margin-top: 28px; max-width: 720px; font: 20px/35px var(--serif); }
+.about-hero .intro { margin: 0 0 20px; font: 20px/35px var(--serif); }
+.about-hero-body { display: flex; gap: 40px; align-items: flex-start; margin-top: 28px; max-width: 760px; }
+.about-photo { flex: 0 0 180px; width: 180px; height: auto; border-radius: 6px; box-shadow: 0 20px 50px rgba(0, 0, 0, .12); }
+.about-contact { padding: 0 0 96px; }
+.about-contact .section-heading { margin-bottom: 48px; }
+.contact-list { max-width: 480px; border-top: 1px solid var(--rule); }
+.contact-list li { display: flex; justify-content: space-between; gap: 24px; padding: 18px 0; border-bottom: 1px solid var(--rule); font: 17px/26px var(--serif); }
+.contact-list .contact-label { color: #767676; font: 700 13px/20px var(--sans); text-transform: uppercase; letter-spacing: .8px; }
+a.contact-value:hover { color: var(--red); }
 .about-pillars { padding: 96px 0; }
 .about-pillars .section-heading { margin-bottom: 48px; }
 .about-pillar-list { border-top: 1px solid var(--rule); }
@@ -120,6 +132,10 @@ p, h1, h2, h3, h4 { margin: 0; }
 @media (max-width: 767px) {
   .about-hero { padding-top: 29.6px; }
   .about-hero h1 { font-size: 28px; line-height: 32px; letter-spacing: -0.84px; }
+  .about-hero-body { flex-direction: column; gap: 20px; }
+  .about-photo { flex-basis: auto; width: 140px; }
+  .about-contact { padding: 0 0 56px; }
+  .contact-list li { flex-direction: column; gap: 4px; }
   .about-pillars { padding: 48px 0; }
   .about-pillar-item { flex-direction: column; gap: 8px; }
 }
