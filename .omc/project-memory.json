@@ -56,56 +56,62 @@
   "hotPaths": [
     {
       "path": "html/assets/css/style.css",
-      "accessCount": 37,
-      "lastAccessed": 1787566051753,
+      "accessCount": 48,
+      "lastAccessed": 1787628218656,
       "type": "file"
     },
     {
       "path": "html/index.html",
-      "accessCount": 32,
-      "lastAccessed": 1787566040087,
+      "accessCount": 43,
+      "lastAccessed": 1787626746766,
       "type": "file"
     },
     {
       "path": "html/assets/js/main.js",
-      "accessCount": 11,
-      "lastAccessed": 1787292165315,
-      "type": "file"
-    },
-    {
-      "path": "html/login.html",
-      "accessCount": 7,
-      "lastAccessed": 1787563371542,
+      "accessCount": 15,
+      "lastAccessed": 1787626870733,
       "type": "file"
     },
     {
       "path": "html/about.html",
-      "accessCount": 5,
-      "lastAccessed": 1787564139409,
+      "accessCount": 11,
+      "lastAccessed": 1787626453016,
+      "type": "file"
+    },
+    {
+      "path": "html/login.html",
+      "accessCount": 11,
+      "lastAccessed": 1787626532353,
       "type": "file"
     },
     {
       "path": "html/membership.html",
-      "accessCount": 4,
-      "lastAccessed": 1787290243918,
+      "accessCount": 9,
+      "lastAccessed": 1787626546132,
       "type": "file"
     },
     {
       "path": "html/ve-blog-va-nguoi-viet.html",
-      "accessCount": 2,
-      "lastAccessed": 1787563397589,
+      "accessCount": 8,
+      "lastAccessed": 1787626520828,
       "type": "file"
     },
     {
       "path": "html/ren-nao-hoc-toan-nang-tam-tu-duy.html",
-      "accessCount": 1,
-      "lastAccessed": 1787560542607,
+      "accessCount": 8,
+      "lastAccessed": 1787626586883,
       "type": "file"
     },
     {
       "path": "html/assets/images/nguyen-the-van.jpg",
       "accessCount": 1,
       "lastAccessed": 1787563203669,
+      "type": "file"
+    },
+    {
+      "path": "html/bo-thi-vao-lop-10-duc-khuon-ky-nguyen-ai.html",
+      "accessCount": 1,
+      "lastAccessed": 1787626732893,
       "type": "file"
     }
   ],

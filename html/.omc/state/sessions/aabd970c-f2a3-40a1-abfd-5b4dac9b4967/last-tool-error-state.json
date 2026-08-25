@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"agent-browser viewport 375 800 && agent-browser wait 300 && agent-browser screenshot /tmp/mobile-header.png\",\"description\":\"Set mobile viewport and screenshot header\"}",
+  "error": "Exit code 1\nUnknown command: viewport",
+  "timestamp": "2026-08-25T03:02:13.205Z",
+  "retry_count": 1
+}

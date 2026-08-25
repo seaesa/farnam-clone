@@ -150,6 +150,20 @@
         applyFilter(tag.getAttribute("data-category"), tag.textContent);
       });
     });
+
+    // Deep-link a pillar via URL hash (e.g. index.html#thoi-dai-so), used by nav/pillar links site-wide.
+    // Runs on initial load AND on hashchange, since same-page hash links don't trigger a reload.
+    var applyFilterFromHash = function () {
+      var category = window.location.hash.replace("#", "");
+      if (!category || !categoryPills) return;
+      var pill = categoryPills.querySelector('[data-category="' + category + '"]');
+      if (pill) {
+        applyFilter(category, pill.textContent);
+        articleListEl.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    };
+    applyFilterFromHash();
+    window.addEventListener("hashchange", applyFilterFromHash);
   }
 
   // Login popup (opens as a modal over the current page instead of navigating away)
