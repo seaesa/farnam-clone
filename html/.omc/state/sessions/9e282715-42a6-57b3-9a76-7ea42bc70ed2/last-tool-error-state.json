@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"agent-browser close 2>&1 | tail -2\\npkill -f \\\"http.server 8792\\\" 2>/dev/null\\necho done\"}",
+  "error": "Exit code 144\n✓ Browser closed",
+  "timestamp": "2026-08-27T03:29:56.302Z",
+  "retry_count": 1
+}

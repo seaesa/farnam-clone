@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1787559783898,
+  "lastScanned": 1787800210639,
   "projectRoot": "/home/hai/Workspaces/projects/farnam-clone",
   "techStack": {
     "languages": [],
@@ -35,25 +35,31 @@
     "html": {
       "path": "html",
       "purpose": null,
-      "fileCount": 6,
-      "lastAccessed": 1787559783866,
+      "fileCount": 8,
+      "lastAccessed": 1787800210620,
       "keyFiles": [
         "about.html",
+        "bo-thi-vao-lop-10-duc-khuon-ky-nguyen-ai.html",
         "index.html",
         "login.html",
-        "membership.html",
-        "out.txt"
+        "membership.html"
       ]
     },
     "html/assets": {
       "path": "html/assets",
       "purpose": "Static assets",
       "fileCount": 0,
-      "lastAccessed": 1787559783878,
+      "lastAccessed": 1787800210632,
       "keyFiles": []
     }
   },
   "hotPaths": [
+    {
+      "path": "html/index.html",
+      "accessCount": 53,
+      "lastAccessed": 1787801365453,
+      "type": "file"
+    },
     {
       "path": "html/assets/css/style.css",
       "accessCount": 48,
@@ -61,27 +67,21 @@
       "type": "file"
     },
     {
-      "path": "html/index.html",
-      "accessCount": 43,
-      "lastAccessed": 1787626746766,
-      "type": "file"
-    },
-    {
       "path": "html/assets/js/main.js",
-      "accessCount": 15,
-      "lastAccessed": 1787626870733,
+      "accessCount": 17,
+      "lastAccessed": 1787800629259,
       "type": "file"
     },
     {
       "path": "html/about.html",
-      "accessCount": 11,
-      "lastAccessed": 1787626453016,
+      "accessCount": 12,
+      "lastAccessed": 1787800305045,
       "type": "file"
     },
     {
       "path": "html/login.html",
-      "accessCount": 11,
-      "lastAccessed": 1787626532353,
+      "accessCount": 12,
+      "lastAccessed": 1787800456342,
       "type": "file"
     },
     {
@@ -92,26 +92,32 @@
     },
     {
       "path": "html/ve-blog-va-nguoi-viet.html",
-      "accessCount": 8,
-      "lastAccessed": 1787626520828,
+      "accessCount": 9,
+      "lastAccessed": 1787800305271,
       "type": "file"
     },
     {
       "path": "html/ren-nao-hoc-toan-nang-tam-tu-duy.html",
-      "accessCount": 8,
-      "lastAccessed": 1787626586883,
+      "accessCount": 9,
+      "lastAccessed": 1787800418648,
+      "type": "file"
+    },
+    {
+      "path": "html/bo-thi-vao-lop-10-duc-khuon-ky-nguyen-ai.html",
+      "accessCount": 2,
+      "lastAccessed": 1787800449378,
+      "type": "file"
+    },
+    {
+      "path": "html/toan-hoc.html",
+      "accessCount": 2,
+      "lastAccessed": 1787801361833,
       "type": "file"
     },
     {
       "path": "html/assets/images/nguyen-the-van.jpg",
       "accessCount": 1,
       "lastAccessed": 1787563203669,
-      "type": "file"
-    },
-    {
-      "path": "html/bo-thi-vao-lop-10-duc-khuon-ky-nguyen-ai.html",
-      "accessCount": 1,
-      "lastAccessed": 1787626732893,
       "type": "file"
     }
   ],

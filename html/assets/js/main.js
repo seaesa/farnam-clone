@@ -112,60 +112,6 @@
     });
   }
 
-  // Category filter for the recent-articles list — the 6 pillars, surfaced as real filters
-  var articleListEl = document.getElementById("articleList");
-  var categoryPills = document.getElementById("categoryPills");
-  if (articleListEl) {
-    var articleItems = articleListEl.querySelectorAll(".article-item");
-    var sectionHeading = document.querySelector(".recent-articles .section-heading");
-    var defaultHeading = sectionHeading ? sectionHeading.textContent : "";
-
-    var applyFilter = function (category, label) {
-      articleItems.forEach(function (item) {
-        var show = category === "all" || item.getAttribute("data-category") === category;
-        item.style.display = show ? "" : "none";
-      });
-      if (categoryPills) {
-        categoryPills.querySelectorAll("[data-category]").forEach(function (p) {
-          p.classList.toggle("is-active", p.getAttribute("data-category") === category);
-        });
-      }
-      if (sectionHeading) {
-        sectionHeading.textContent = category === "all" ? defaultHeading : "Bài viết: " + label;
-      }
-    };
-
-    if (categoryPills) {
-      categoryPills.querySelectorAll("a[data-category]").forEach(function (pill) {
-        pill.addEventListener("click", function (e) {
-          e.preventDefault();
-          applyFilter(pill.getAttribute("data-category"), pill.textContent);
-          articleListEl.scrollIntoView({ behavior: "smooth", block: "start" });
-        });
-      });
-    }
-
-    document.querySelectorAll(".article-category[data-category]").forEach(function (tag) {
-      tag.addEventListener("click", function () {
-        applyFilter(tag.getAttribute("data-category"), tag.textContent);
-      });
-    });
-
-    // Deep-link a pillar via URL hash (e.g. index.html#thoi-dai-so), used by nav/pillar links site-wide.
-    // Runs on initial load AND on hashchange, since same-page hash links don't trigger a reload.
-    var applyFilterFromHash = function () {
-      var category = window.location.hash.replace("#", "");
-      if (!category || !categoryPills) return;
-      var pill = categoryPills.querySelector('[data-category="' + category + '"]');
-      if (pill) {
-        applyFilter(category, pill.textContent);
-        articleListEl.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-    };
-    applyFilterFromHash();
-    window.addEventListener("hashchange", applyFilterFromHash);
-  }
-
   // Login popup (opens as a modal over the current page instead of navigating away)
   var authModal = document.getElementById("authModal");
   if (authModal) {

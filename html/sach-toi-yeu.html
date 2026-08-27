@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Về tôi &mdash; Blog cá nhân</title>
-<meta name="description" content="Mình là người viết blog này — chia sẻ về cách bộ não học toán, hệ thống ghi chú, và tư duy ra quyết định. Đây là những gì mình viết.">
+<title>Cuốn sách tôi yêu &mdash; Blog cá nhân</title>
+<meta name="description" content="Những cuốn sách đã thay đổi cách mình nghĩ &mdash; góc đọc cá nhân bên lề 5 trụ nội dung chính.">
 <link rel="icon" href="assets/images/epic-academy-icon-logo.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,7 @@
 
     <nav class="primary-nav" id="primaryNav">
       <div class="nav-item">
-        <a href="index.html">Bài viết</a>
+        <a href="index.html" class="is-active">Bài viết</a>
         <button type="button" class="nav-caret" aria-label="Mở danh mục Bài viết" aria-expanded="false">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
         </button>
@@ -35,7 +35,7 @@
         </ul>
       </div>
       <a href="#">Podcast</a>
-      <a href="about.html" class="is-active">Về tôi</a>
+      <a href="about.html">Về tôi</a>
       <a href="#">Newsletter</a>
       <button class="search-toggle desktop-search-toggle" aria-label="Tìm kiếm" aria-expanded="false">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg>
@@ -51,6 +51,7 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
     </button>
   </div>
+
 </header>
 
 <div class="nav-overlay" id="navOverlay"></div>
@@ -62,79 +63,39 @@
 
 <main class="wrap">
 
-  <section class="about-hero">
-    <h1>Về mình</h1>
-    <div class="about-hero-body">
-      <img class="about-photo" src="assets/images/nguyen-the-van.jpg" alt="Nguyễn Thế Vận" width="666" height="1000" loading="lazy">
-      <div>
-        <p class="intro">Mình là Nguyễn Thế Vận — giáo viên Toán, người viết blog này. Song song với việc đứng lớp, mình theo đuổi thiền Vipassana, Kinh Dịch, Duy thức học và các hệ thống tư duy phương Đông, rồi mang những gì học được trở lại việc dạy và học Toán.</p>
-        <a href="ve-blog-va-nguoi-viet.html" class="pagination-link">Đọc câu chuyện đầy đủ</a>
-      </div>
-    </div>
+  <section class="hero">
+    <p class="hero-eyebrow">Chủ đề</p>
+    <h1>Cuốn sách tôi yêu</h1>
+    <p class="intro">Những cuốn sách đã thay đổi cách mình nghĩ &mdash; góc đọc cá nhân bên lề 5 trụ nội dung chính.</p>
   </section>
 
-  <section class="about-pillars">
-    <p class="section-heading">Những gì mình viết</p>
+  <hr>
 
-    <div class="about-pillar-list">
-      <article class="about-pillar-item">
-        <span class="pillar-index">01</span>
-        <div>
-          <h2>Não bộ học Toán</h2>
-          <p>Vì sao não người xử lý toán theo một cách rất riêng, và cách học toán hiệu quả dựa trên chính cơ chế của bộ não bạn. Đây là điều duy nhất bạn sẽ không tìm thấy ở nơi khác.</p>
-          <a href="toan-hoc.html" class="about-pillar-link">Khám phá</a>
-        </div>
-      </article>
-      <article class="about-pillar-item">
-        <span class="pillar-index">02</span>
-        <div>
-          <h2>Sức khỏe tinh thần học tập</h2>
-          <p>Cách giữ tinh thần vững vàng, giảm căng thẳng và nỗi sợ khi học Toán &mdash; những thực hành đơn giản giúp việc học nhẹ nhàng và bền vững hơn.</p>
-          <a href="suc-khoe.html" class="about-pillar-link">Khám phá</a>
-        </div>
-      </article>
-      <article class="about-pillar-item">
-        <span class="pillar-index">03</span>
-        <div>
-          <h2>Học toán thời đại số</h2>
-          <p>Toán học thế kỷ 21: triết lý học toán cùng AI, STEM, và toán trong đời sống hàng ngày.</p>
-          <a href="thoi-dai-so.html" class="about-pillar-link">Khám phá</a>
-        </div>
-      </article>
-      <article class="about-pillar-item">
-        <span class="pillar-index">04</span>
-        <div>
-          <h2>Tư duy song song</h2>
-          <p>Lateral Thinking của De Bono kết hợp Duy thức học và Dịch lý trong ra quyết định.</p>
-          <a href="song-song.html" class="about-pillar-link">Khám phá</a>
-        </div>
-      </article>
-      <article class="about-pillar-item">
-        <span class="pillar-index">05</span>
-        <div>
-          <h2>Bộ não thứ hai</h2>
-          <p>Xây dựng và sử dụng hệ thống ghi chú thứ hai bằng Obsidian, dùng suốt đời.</p>
-          <a href="bo-nao-2.html" class="about-pillar-link">Khám phá</a>
-        </div>
-      </article>
-      <article class="about-pillar-item">
-        <span class="pillar-index">06</span>
-        <div>
-          <h2>Cuốn sách tôi yêu</h2>
-          <p>Những cuốn sách đã thay đổi cách mình nghĩ — góc đọc cá nhân bên lề 5 trụ nội dung chính.</p>
-          <a href="sach-toi-yeu.html" class="about-pillar-link">Xem danh sách</a>
-        </div>
+  <section class="recent-articles">
+    <p class="section-heading">Bài viết</p>
+
+    <div class="article-list">
+<article class="article-item">
+        <a class="article-category" href="sach-toi-yeu.html">Cuốn sách tôi yêu</a>
+        <h2><a href="#">Cuốn sách đã thay đổi cách mình nghĩ về việc học (bài demo)</a></h2>
+        <p class="excerpt">Không phải cuốn sách nào cũng thay đổi được cách bạn nghĩ. Đây là cuốn sách đã làm điều đó với mình, và lý do vì sao nó nằm trong danh sách &ldquo;Cuốn sách tôi yêu&rdquo; &hellip;</p>
+        <a href="#" class="read-more">Đọc tiếp</a>
       </article>
     </div>
   </section>
 
-  <section class="about-contact" id="lien-he">
-    <p class="section-heading">Liên hệ với tôi</p>
-    <ul class="contact-list">
-      <li><span class="contact-label">Họ và tên</span><span class="contact-value">Nguyễn Thế Vận</span></li>
-      <li><span class="contact-label">Điện thoại</span><a class="contact-value" href="tel:0813615333">081 361 5333</a></li>
-      <li><span class="contact-label">Email</span><a class="contact-value" href="mailto:vannt.lateral@gmail.com">vannt.lateral@gmail.com</a></li>
-      <li><span class="contact-label">Địa chỉ</span><span class="contact-value">Kim Liên, Hà Nội</span></li>
+  <hr>
+
+  <section class="category-block">
+    <p class="section-heading">Khám phá chủ đề khác</p>
+    <ul class="category-pills">
+      <li><a href="index.html">Tất cả</a></li>
+      <li><a href="toan-hoc.html">Não bộ học Toán</a></li>
+      <li><a href="suc-khoe.html">Sức khỏe tinh thần học tập</a></li>
+      <li><a href="thoi-dai-so.html">Học toán thời đại số</a></li>
+      <li><a href="song-song.html">Tư duy song song</a></li>
+      <li><a href="bo-nao-2.html">Bộ não thứ hai</a></li>
+      <li><a href="sach-toi-yeu.html" class="is-active">Cuốn sách tôi yêu</a></li>
     </ul>
   </section>
 
