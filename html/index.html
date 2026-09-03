@@ -55,11 +55,19 @@
 </header>
 
 <div class="nav-overlay" id="navOverlay"></div>
-<form class="search-panel" id="searchPanel" role="search">
-  <label class="screen-reader-text" for="siteSearch">Tìm kiếm bài viết</label>
-  <input id="siteSearch" type="search" placeholder="Tìm kiếm..." autocomplete="off">
-  <button type="submit">Tìm</button>
-</form>
+<div class="search-modal" id="searchModal" hidden>
+  <div class="search-modal-overlay" id="searchModalOverlay"></div>
+  <div class="search-modal-dialog" role="dialog" aria-modal="true" aria-label="Tìm kiếm bài viết">
+    <form class="search-modal-form" id="searchForm" role="search">
+      <svg class="search-modal-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg>
+      <label class="screen-reader-text" for="siteSearch">Tìm kiếm bài viết</label>
+      <input id="siteSearch" type="search" placeholder="Tìm theo tiêu đề hoặc thẻ&hellip;" autocomplete="off">
+      <kbd class="search-modal-key">Esc</kbd>
+    </form>
+    <ul class="search-modal-results" id="searchResults"></ul>
+    <p class="search-modal-empty" id="searchEmpty" hidden>Không tìm thấy bài viết phù hợp.</p>
+  </div>
+</div>
 
 <main class="wrap">
 
@@ -124,12 +132,6 @@
         <a href="#" class="read-more">Đọc tiếp</a>
       </article>
       <article class="article-item">
-        <a class="article-category" href="thoi-dai-so.html">Học toán thời đại số</a>
-        <h2><a href="#">AI có đang khiến chúng ta lười tư duy toán học? (bài demo)</a></h2>
-        <p class="excerpt">AI giải được mọi bài toán chỉ trong một câu lệnh. Vậy con người còn cần học toán không, và học theo cách nào trong thời đại số &hellip;</p>
-        <a href="#" class="read-more">Đọc tiếp</a>
-      </article>
-      <article class="article-item">
         <a class="article-category" href="song-song.html">Tư duy song song</a>
         <h2><a href="#">Lateral Thinking là gì, và vì sao nó quan trọng hơn bạn nghĩ (bài demo)</a></h2>
         <p class="excerpt">Tư duy song song của Edward de Bono giúp bạn thoát khỏi lối mòn logic tuyến tính. Kết hợp cùng Duy thức học và Dịch lý, đây là cách mình ra quyết định &hellip;</p>
@@ -139,12 +141,6 @@
         <a class="article-category" href="song-song.html">Tư duy song song</a>
         <h2><a href="#">Duy thức học và bài học về nhận thức trong ra quyết định (bài demo)</a></h2>
         <p class="excerpt">Trước khi ra một quyết định, não bộ đã diễn giải thực tại theo cách riêng của nó. Duy thức học giúp mình nhìn lại quá trình đó một cách tỉnh táo hơn &hellip;</p>
-        <a href="#" class="read-more">Đọc tiếp</a>
-      </article>
-      <article class="article-item">
-        <a class="article-category" href="song-song.html">Tư duy song song</a>
-        <h2><a href="#">Cách ghi chú kiểu Zettelkasten thay đổi việc học của mình (bài demo)</a></h2>
-        <p class="excerpt">Không phải ghi nhiều là nhớ nhiều. Zettelkasten dạy mình cách liên kết ý tưởng thay vì chỉ lưu trữ chúng &hellip;</p>
         <a href="#" class="read-more">Đọc tiếp</a>
       </article>
       <article class="article-item">
@@ -166,12 +162,6 @@
         <a href="#" class="read-more">Đọc tiếp</a>
       </article>
       <article class="article-item">
-        <a class="article-category" href="toan-hoc.html">Não bộ học Toán</a>
-        <h2><a href="#">Vì sao &ldquo;hiểu&rdquo; quan trọng hơn &ldquo;nhớ&rdquo; khi học toán (bài demo)</a></h2>
-        <p class="excerpt">Nhớ công thức giúp bạn qua được bài kiểm tra. Hiểu bản chất giúp bạn dùng được toán học suốt đời. Đây là sự khác biệt mình học được sau nhiều năm dạy và tự học &hellip;</p>
-        <a href="#" class="read-more">Đọc tiếp</a>
-      </article>
-      <article class="article-item">
         <a class="article-category" href="suc-khoe.html">Sức khỏe tinh thần học tập</a>
         <h2><a href="#">Cách mình xây dựng thói quen học 20 phút mỗi ngày (bài demo)</a></h2>
         <p class="excerpt">Không cần vài tiếng mỗi ngày để giỏi toán hơn. 20 phút đều đặn, đúng cách, mang lại hiệu quả bất ngờ hơn bạn nghĩ &hellip;</p>
@@ -181,12 +171,6 @@
         <a class="article-category" href="thoi-dai-so.html">Học toán thời đại số</a>
         <h2><a href="#">STEM cho người lớn: học lại toán sau nhiều năm rời ghế nhà trường (bài demo)</a></h2>
         <p class="excerpt">Không bao giờ là quá muộn để học lại toán. Đây là lộ trình mình gợi ý cho người đi làm muốn quay lại với những con số &hellip;</p>
-        <a href="#" class="read-more">Đọc tiếp</a>
-      </article>
-      <article class="article-item">
-        <a class="article-category" href="song-song.html">Tư duy song song</a>
-        <h2><a href="#">Sổ tay số học: ghi chú toán học không nhàm chán (bài demo)</a></h2>
-        <p class="excerpt">Một cuốn sổ ghi chú toán học tốt trông không giống sách giáo khoa. Đây là cách mình tổ chức ghi chú để vừa nhớ lâu, vừa dễ tra cứu lại &hellip;</p>
         <a href="#" class="read-more">Đọc tiếp</a>
       </article>
       <article class="article-item">
@@ -331,6 +315,7 @@
   </div>
 </div>
 
+<script src="assets/js/search-index.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>

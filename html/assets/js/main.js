@@ -55,24 +55,142 @@
     }
   });
 
-  // Lightweight search panel for the static clone.
+  // Search modal (Ctrl+K / Cmd+K) — tìm theo tiêu đề hoặc tag trong SITE_SEARCH_INDEX.
   var searchToggles = document.querySelectorAll(".search-toggle");
-  var searchPanel = document.getElementById("searchPanel");
+  var searchModal = document.getElementById("searchModal");
+  var searchOverlay = document.getElementById("searchModalOverlay");
+  var searchForm = document.getElementById("searchForm");
   var searchInput = document.getElementById("siteSearch");
-  if (searchToggles.length && searchPanel) {
-    searchToggles.forEach(function (searchToggle) {
-      searchToggle.addEventListener("click", function () {
-      var open = searchPanel.classList.toggle("is-open");
-      searchToggles.forEach(function (toggle) {
-        toggle.setAttribute("aria-expanded", String(open));
+  var searchResults = document.getElementById("searchResults");
+  var searchEmpty = document.getElementById("searchEmpty");
+
+  if (searchModal && searchInput && searchResults) {
+    var searchIndex = window.SITE_SEARCH_INDEX || [];
+    var activeIndex = -1;
+    var lastFocused = null;
+
+    function stripDiacritics(str) {
+      return str
+        .normalize("NFD")
+        .replace(/[̀-ͯ]/g, "")
+        .replace(/đ/g, "d")
+        .replace(/Đ/g, "D");
+    }
+
+    function normalize(str) {
+      return stripDiacritics(String(str || "")).toLowerCase().trim();
+    }
+
+    function renderResults(items) {
+      searchResults.innerHTML = "";
+      activeIndex = -1;
+      if (!items.length) {
+        if (searchEmpty) searchEmpty.hidden = false;
+        return;
+      }
+      if (searchEmpty) searchEmpty.hidden = true;
+      items.forEach(function (item, i) {
+        var li = document.createElement("li");
+        var a = document.createElement("a");
+        a.href = item.url;
+        a.className = "search-modal-result";
+        a.setAttribute("data-index", String(i));
+
+        var title = document.createElement("span");
+        title.className = "search-result-title";
+        title.textContent = item.title;
+
+        var meta = document.createElement("span");
+        meta.className = "search-result-meta";
+        meta.textContent = item.pillar ? item.type + " — " + item.pillar : item.type;
+
+        a.appendChild(title);
+        a.appendChild(meta);
+        li.appendChild(a);
+        searchResults.appendChild(li);
       });
-      if (open && searchInput) searchInput.focus();
+    }
+
+    function search(query) {
+      var q = normalize(query);
+      if (!q) return searchIndex.slice(0, 8);
+      return searchIndex.filter(function (item) {
+        var haystack = normalize(item.title + " " + (item.pillar || "") + " " + item.tags.join(" "));
+        return haystack.indexOf(q) !== -1;
+      });
+    }
+
+    function setActive(index) {
+      var options = searchResults.querySelectorAll(".search-modal-result");
+      options.forEach(function (opt) { opt.classList.remove("is-active"); });
+      if (index >= 0 && index < options.length) {
+        activeIndex = index;
+        options[index].classList.add("is-active");
+        options[index].scrollIntoView({ block: "nearest" });
+      } else {
+        activeIndex = -1;
+      }
+    }
+
+    function openSearchModal() {
+      lastFocused = document.activeElement;
+      searchModal.classList.add("is-open");
+      searchModal.hidden = false;
+      document.body.classList.add("search-modal-open");
+      searchToggles.forEach(function (toggle) { toggle.setAttribute("aria-expanded", "true"); });
+      renderResults(search(""));
+      searchInput.value = "";
+      searchInput.focus();
+    }
+
+    function closeSearchModal() {
+      searchModal.classList.remove("is-open");
+      searchModal.hidden = true;
+      document.body.classList.remove("search-modal-open");
+      searchToggles.forEach(function (toggle) { toggle.setAttribute("aria-expanded", "false"); });
+      if (lastFocused && lastFocused.focus) lastFocused.focus();
+    }
+
+    searchToggles.forEach(function (toggle) {
+      toggle.addEventListener("click", function () {
+        if (searchModal.classList.contains("is-open")) closeSearchModal();
+        else openSearchModal();
       });
     });
-    searchPanel.addEventListener("submit", function (e) {
-      e.preventDefault();
-      if (searchInput && searchInput.value.trim()) {
-        window.alert("Tìm kiếm là tương tác demo trên bản clone tĩnh này: " + searchInput.value.trim());
+
+    if (searchOverlay) searchOverlay.addEventListener("click", closeSearchModal);
+    if (searchForm) {
+      searchForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var options = searchResults.querySelectorAll(".search-modal-result");
+        var target = activeIndex >= 0 ? options[activeIndex] : options[0];
+        if (target) window.location.href = target.getAttribute("href");
+      });
+    }
+
+    searchInput.addEventListener("input", function () {
+      renderResults(search(searchInput.value));
+    });
+
+    searchInput.addEventListener("keydown", function (e) {
+      var options = searchResults.querySelectorAll(".search-modal-result");
+      if (e.key === "ArrowDown") {
+        e.preventDefault();
+        setActive(activeIndex + 1 >= options.length ? 0 : activeIndex + 1);
+      } else if (e.key === "ArrowUp") {
+        e.preventDefault();
+        setActive(activeIndex - 1 < 0 ? options.length - 1 : activeIndex - 1);
+      }
+    });
+
+    document.addEventListener("keydown", function (e) {
+      var isCombo = (e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k";
+      if (isCombo) {
+        e.preventDefault();
+        if (searchModal.classList.contains("is-open")) closeSearchModal();
+        else openSearchModal();
+      } else if (e.key === "Escape" && searchModal.classList.contains("is-open")) {
+        closeSearchModal();
       }
     });
   }
